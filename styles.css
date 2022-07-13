@@ -4,9 +4,9 @@
     box-sizing: border-box;
     padding: 0;
     margin: 0;
-    border: 1px solid red;
 }
-html{
+
+html {
     scroll-behavior: smooth;
 }
 
@@ -108,6 +108,7 @@ li {
     font-weight: 700;
     cursor: pointer;
 }
+
 @media (max-width:992px) {
     .header {
         padding: 0px 50px 0px 10px;
@@ -199,23 +200,29 @@ li {
     width: 100%;
     height: 420px;
 }
+
 @media (max-width:992px) {
-    .section{
+    .section {
         width: 100%;
     }
-    .hero-img{
+
+    .hero-img {
         display: none;
     }
-    .button-hero{
+
+    .button-hero {
         margin-top: 40px;
     }
-    .hero-title{
+
+    .hero-title {
         text-align: center;
     }
-    .hero-subtitle{
+
+    .hero-subtitle {
         text-align: center;
     }
-    .hero-text{
+
+    .hero-text {
         width: 100%;
         display: flex;
         justify-content: center;
@@ -296,18 +303,33 @@ li {
     border-bottom: 3px solid rgb(141, 141, 141);
     cursor: pointer;
 }
+
 @media (max-width:992px) {
-    .section2 h2{
+    .section2 h2 {
         text-align: center;
     }
-    .card-info{
+
+    .card-info {
         flex-wrap: wrap;
-    }
-    .card-info{
         margin: 5px;
+        padding: 5px;
+        width: 150px;
     }
-    .section2{
+
+    .card-info p {
+        font-size: 13px;
+    }
+
+    .section2 {
         width: 100%;
+    }
+}
+
+@media (min-width:768px) {
+    .card-info {
+        margin: 20px;
+        width: 300px;
+        padding: 10px;
     }
 }
 
@@ -320,6 +342,7 @@ li {
     display: flex;
     justify-content: center;
     align-items: center;
+    text-align: center;
     flex-direction: column;
     margin: 0 auto;
     padding: 30px 0;
@@ -371,12 +394,14 @@ li {
     color: #8fa3b0;
     font-weight: var(--medium);
 }
-.vs{
+
+.vs {
     display: flex;
     justify-content: center;
     height: 100px;
     font-weight: var(--regular);
 }
+
 .equipos img {
     width: 100px;
 }
@@ -387,39 +412,58 @@ li {
     color: white;
     align-items: center;
 }
-.horario{
+
+.horario {
     font-size: 30px;
     padding: 20px;
     font-weight: var(--medium);
     color: white;
 }
+
 @media (max-width:992px) {
-    .section3{
-        width: 100%;
-        max-width: 100vh;
+    .equipos img {
+        width: 20%;
     }
-    .tipo{
+
+    .section3 {
+        width: 100%;
+    }
+
+    .tipo {
         display: none;
     }
-    .equipos{
-        padding: 20px;
+
+    .equipos {
+        padding: 20px 0;
+        gap: 0px;
     }
-    .equipos p{
+
+    .equipos p {
         font-size: 20px;
     }
-    .horario{
+
+    .horario {
         font-size: 25px;
     }
-    .equipos-nombre{
+
+    .equipos-nombre {
         display: none;
     }
-    .section3{
+
+    .section3 {
         width: 100%;
     }
 }
 
+@media (min-width:768px) {
+    .tipo {
+        display: flex;
+    }
+}
+
+
 /* EQUIPOS SECTION */
-.equipos-container{
+.equipos-container {
     margin-top: 80px;
     background-color: #0f1519;
 }
@@ -434,14 +478,17 @@ li {
     width: 95%;
     max-width: 1300px;
 }
-.section4 h2{
+
+.section4 h2 {
     font-size: 40px;
     margin-top: 20px;
     margin-bottom: 80px;
+    text-transform: uppercase;
     font-weight: var(--medium);
     color: white;
 }
-.card-equipos-container{
+
+.card-equipos-container {
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -449,7 +496,8 @@ li {
     width: 100%;
     flex-wrap: wrap;
 }
-.card-equipos{
+
+.card-equipos {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -461,38 +509,65 @@ li {
     gap: 10px;
     box-shadow: 1px 3px 10px 2px #000000;
 }
-.img-card-equipos img{
+
+.img-card-equipos img {
     width: 100px;
 }
-.card-equipos h3{
+
+.card-equipos h3 {
     font-size: 20px;
-    color: white; 
+    color: white;
 }
-.card-equipos p{
+
+.card-equipos p {
     color: white;
     font-weight: var(--regular);
 }
-.card-equipos h4{
+
+.card-equipos h4 {
     font-weight: var(--medium);
     color: #8fa3b0;
 }
 
-.card-equipos:hover{
-    transform:translate(0px,-5px);
+.card-equipos:hover {
+    transform: translate(0px, -5px);
     transition: all 0.5s ease;
     cursor: pointer;
 }
+
 @media (max-width:992px) {
-    .section4{
+    .section4 {
         width: 100%;
+    }
+
+    .section4 {
+        text-align: center;
+    }
+
+    .card-equipos {
+        width: 180px;
+        margin: 8px 12px;
+        padding: 5px;
+    }
+}
+
+@media (max-width:576px) {
+    .card-equipos {
+        width: 270px;
+        margin: 20px;
     }
 }
 
 /* PICKEM SECTION */
-.pickem-container{
+.pickem-container {
     margin-top: 100px;
     margin-bottom: 90px;
 }
+
+.poro {
+    display: none;
+}
+
 .section5 {
     display: flex;
     justify-content: center;
@@ -503,7 +578,8 @@ li {
     width: 95%;
     max-width: 1300px;
 }
-.pickem-img{
+
+.pickem-img {
     background-image: url(/img/world1.png);
     background-repeat: no-repeat;
     background-size: cover;
@@ -512,37 +588,43 @@ li {
     width: 50%;
     margin-right: 30px;
 }
-.pickem-text{
+
+.pickem-text {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
     width: 50%;
 }
-.pickem-text h2{
+
+.pickem-text h2 {
     font-size: 40px;
     font-weight: var(--medium);
     margin-bottom: 30px;
 }
-.form-predict{
+
+.form-predict {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
-.form-predict h3{
+
+.form-predict h3 {
     font-size: 30px;
     font-weight: var(--regular);
     margin-bottom: 20px;
 }
-form{
+
+form {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
     gap: 30px;
 }
-form input{
+
+form input {
     width: 300px;
     height: 40px;
     border-radius: 15px;
@@ -552,7 +634,8 @@ form input{
     font-weight: var(--medium);
     outline: none;
 }
-.button-predict{
+
+.button-predict {
     font-size: 18px;
     text-transform: uppercase;
     text-align: center;
@@ -562,6 +645,7 @@ form input{
     padding: 10px;
     width: 300px;
 }
+
 form a {
     color: white;
 }
@@ -572,26 +656,42 @@ form a {
 }
 
 @media (max-width:992px) {
-.pickem-img{
-   display: none;
-}
-.pickem-text{
-    text-align: center;
-    width: 100%;
-}
-.pickem-text h2{
-    margin-bottom: 50px;
-}
-.section5{
-    width: 100%;
-}
+    .pickem-img {
+        display: none;
+    }
+
+    .pickem-text {
+        text-align: center;
+        width: 100%;
+    }
+
+    .pickem-text h2 {
+        margin-bottom: 10px;
+    }
+
+    .section5 {
+        width: 100%;
+        flex-direction: column;
+    }
+
+    .poro {
+        background-image: url(/img/emote2.png);
+        height: 200px;
+        width: 200px;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        display: block;
+
+    }
 }
 
 /* FOOTER SECTION */
-.footer-container{
+.footer-container {
     background-color: #111111;
 }
-.footer{
+
+.footer {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -600,7 +700,8 @@ form a {
     width: 95%;
     max-width: 1300px;
 }
-.footer-1{
+
+.footer-1 {
     width: 40%;
     display: flex;
     flex-direction: column;
@@ -610,24 +711,29 @@ form a {
     gap: 30px;
     margin: 25px;
 }
-.footer-1 img{
+
+.footer-1 img {
     width: 150px;
 }
-.footer-1i{
+
+.footer-1i {
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 30px;
     width: 100%;
 }
-.footer-1i a{
+
+.footer-1i a {
     font-size: 30px;
     color: white;
 }
-.footer-1i a:hover{
+
+.footer-1i a:hover {
     color: #12172b;
 }
-.footer-2{
+
+.footer-2 {
     width: 20%;
     display: flex;
     flex-direction: column;
@@ -636,18 +742,22 @@ form a {
     gap: 10px;
     margin: 25px;
 }
-.footer-2 a h4{
+
+.footer-2 a h4 {
     color: white;
     font-weight: var(--medium);
 }
-.footer-2 a{
+
+.footer-2 a {
     font-weight: var(--thin);
     color: #8fa3b0;
 }
-.footer-2 a:hover{
+
+.footer-2 a:hover {
     border-right: 1px solid white;
 }
-.footer-3{
+
+.footer-3 {
     width: 20%;
     display: flex;
     flex-direction: column;
@@ -656,36 +766,43 @@ form a {
     gap: 10px;
     margin: 25px;
 }
-.footer-3 a h4{
+
+.footer-3 a h4 {
     color: white;
     font-weight: var(--medium);
 }
-.footer-3 a h4:hover{
+
+.footer-3 a h4:hover {
     border-right: 1px solid white;
 }
-.firma{
-    background-color: #111111 ;
+
+.firma {
+    background-color: #111111;
     color: white;
     display: flex;
     justify-content: center;
 }
-.firma h6{
+
+.firma h6 {
     font-weight: 100;
     font-size: 15px;
 }
 
 @media (max-width:992px) {
-    .footer{
+    .footer {
         flex-wrap: wrap;
         width: 100%;
     }
-    .footer-1{
+
+    .footer-1 {
         width: 100%;
     }
-    .footer-2{
+
+    .footer-2 {
         width: 35%;
     }
-    .footer-3{
+
+    .footer-3 {
         width: 35%;
     }
 }

@@ -139,6 +139,10 @@ width: 100%;
     text-decoration: none;
     color: #8fa3b0;
 }
+.formulario a:hover{
+    color: #303a69ad;
+    transition: all 0.3s linear;
+}
 
 @media (max-width:992px) {
     .container-img-register{

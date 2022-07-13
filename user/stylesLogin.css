@@ -23,7 +23,7 @@ body {
     width: 45%;
     background-size: cover;
     background-repeat: no-repeat;
-    background-position:65%;
+    background-position: 65%;
 }
 
 .container-formulario {
@@ -138,6 +138,10 @@ body {
     transition: all 0.3s linear;
 }
 
+.password {
+    padding: 9px;
+}
+
 .formulario p {
     font-weight: 200;
     font-size: 17px;
@@ -150,43 +154,55 @@ body {
     color: #8fa3b0;
 }
 
+.formulario a:hover {
+    color: #303a69ad;
+    transition: all 0.3s linear;
+}
+
 @media (max-width:992px) {
-.container-img-login{
-    display: none;
-}
-.container-formulario{
-    width: 100%;
-    height: 100%;
-}
-.ingreso-correo h1{
-    text-align: center;
-    padding: 12px;
-}
-.icons{
-    justify-content: center;
-}
-.ingreso-correo{
-    margin-top: 50px;
-    margin-bottom: 0px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-}
-.formulario{
-    height: 100%;
-}
-.formulario form{
-    align-items: center;
-}
-.poro{
-    background-image: url(/img/emote4.png);
-    height: 200px;
-    width: 200px;
-    margin-top: 20px;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    display: block;
-}
+    .container-img-login {
+        display: none;
+    }
+
+    .container-formulario {
+        width: 100%;
+        height: 100%;
+    }
+
+    .ingreso-correo h1 {
+        text-align: center;
+        padding: 12px;
+    }
+
+    .icons {
+        justify-content: center;
+    }
+
+    .ingreso-correo {
+        margin-top: 50px;
+        margin-bottom: 0px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    .formulario {
+        height: 100%;
+    }
+
+    .formulario form {
+        align-items: center;
+    }
+
+    .poro {
+        background-image: url(/img/emote4.png);
+        height: 200px;
+        width: 200px;
+        margin-top: 20px;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        display: block;
+    }
 }
