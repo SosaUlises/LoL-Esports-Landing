@@ -123,7 +123,7 @@ li {
         top: 100px;
         right: 0px;
         width: 100%;
-        height: calc(100vh - 100px);
+        height: calc(100vh - 200px);
         display: none;
         z-index: 9999;
     }
@@ -202,7 +202,21 @@ li {
         display: none;
     }
     .button-hero{
-        margin-top: 30px;
+        margin-top: 40px;
+    }
+    .hero-title{
+        text-align: center;
+    }
+    .hero-subtitle{
+        text-align: center;
+    }
+    .hero-text{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        flex-direction: column;
     }
 }
 
@@ -284,6 +298,9 @@ li {
     }
     .card-info{
         flex-wrap: wrap;
+    }
+    .card-info{
+        margin: 5px;
     }
 }
 
